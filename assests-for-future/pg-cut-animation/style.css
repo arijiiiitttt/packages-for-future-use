@@ -1,0 +1,95 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#main-p {
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+  #top {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 50vh;
+    background-color: white;
+    overflow: hidden;
+    z-index: 9;
+
+    #top-h {
+      bottom: 50%;
+    }
+
+    h1 {
+      position: absolute;
+      font-size: 20vw;
+      font-family: "Anton", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  #center {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+
+    .content {
+      position: absolute;
+      margin-top: 100vh;
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Playwrite BE VLG", cursive;
+      color: white;
+      font-size: 4vw;
+
+
+    }
+  }
+
+  #bottom {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 50vh;
+    background-color: white;
+    overflow: hidden;
+
+    #bottom-h {
+      top: 0% !important;
+      overflow: hidden;
+    }
+
+    h1 {
+      position: absolute;
+      font-size: 20vw;
+      font-family: "Anton", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+}
